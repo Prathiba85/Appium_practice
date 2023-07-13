@@ -2,6 +2,7 @@ package rahulshettyacademy.Appium_practice;
 
 import java.time.Duration;
 import java.util.List;
+import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -45,12 +46,15 @@ public class eCommercetestcase1 extends BaseTest {
 	//@Test
 	public void addToCart() throws InterruptedException
 	{
+		/*Select Country 
 		
-		//driver.findElement(By.id("android:id/text1")).click();
+		driver.findElement(By.id("android:id/text1")).click();
 		
-		//driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Argentina\"))"));
+		driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Argentina\"))"));
 		
-		//driver.findElement(By.xpath("//android.widget.TextView[@text='India']")).click();
+		driver.findElement(By.xpath("//android.widget.TextView[@text='India']")).click();
+		 
+		 */
 		driver.findElement(By.id("com.androidsample.generalstore:id/nameField")).sendKeys("prathiba");
 		driver.hideKeyboard();
 		driver.findElement(By.id("com.androidsample.generalstore:id/radioFemale")).click();
@@ -128,8 +132,7 @@ public class eCommercetestcase1 extends BaseTest {
 	
 	driver.findElement(AppiumBy.className("android.widget.CheckBox")).click();
 	driver.findElement(By.id("com.androidsample.generalstore:id/btnProceed")).click();
-		
-	}
 	
+	}
 	
 }

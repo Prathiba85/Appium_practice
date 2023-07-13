@@ -18,7 +18,9 @@ import io.appium.java_client.android.options.UiAutomator2Options;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
 
+
 public class Miscellaneous extends BaseTest  {
+	
 	
 	
 	@Test
@@ -29,7 +31,8 @@ public class Miscellaneous extends BaseTest  {
 		
 		Activity activity = new Activity("io.appium.android.apis/io.appium","io.appium.android.apis.preference.PreferenceDependencies");
 		
-	driver.startActivity(activity); 
+		driver.startActivity(activity);
+	
 		
 		//driver.findElement(AppiumBy.accessibilityId("Preference")).click();
 		//driver.findElement(By.xpath("//android.widget.TextView[@content-desc='3. Preference dependencies']")).click();
